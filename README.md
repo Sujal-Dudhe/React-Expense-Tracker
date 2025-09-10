@@ -1,12 +1,79 @@
-# React + Vite
+# React Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and intuitive expense tracker application built with React and Vite. It allows users to manage their expenses with functionalities to add, edit, delete, and search for expenses.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+* **View all expenses** on the main page.
+* **Create new expenses** with a title, description, amount, and date.
+* **Update existing expenses**.
+* **Delete expenses**.
+* **Search for expenses** by title or description.
+* **Persistent state** using Zustand and local storage.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Technologies Used
+
+* **React**: A JavaScript library for building user interfaces.
+* **Vite**: A fast build tool for modern web projects.
+* **Zustand**: A small, fast, and scalable state-management solution.
+* **Ant Design**: A React UI library with a set of high-quality components.
+* **Tailwind CSS**: A utility-first CSS framework.
+* **Lucide React**: A library of beautiful and consistent icons.
+* **Moment.js**: A library for handling dates and times.
+* **nanoid**: A small, secure, URL-friendly, unique string ID generator.
+
+---
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+* Node.js and npm installed on your machine.
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Sujal-Dudhe/React-Expense-Tracker.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd react-expense-tracker
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+---
+
+## Run this app locally
+
+```bash
+npm run dev
+```
+## 📂 Project Structure
+```bash
+react-expense-tracker/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   └── react.svg
+│   ├── zustand/
+│   │   └── useExpense.js       # Zustand store for state management
+│   ├── App.jsx                 # Main application component
+│   ├── index.css               # Main CSS file
+│   └── main.jsx                # Entry point of the application
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+```
